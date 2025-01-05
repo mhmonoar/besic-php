@@ -1,4 +1,12 @@
 <?php
+
+/* if(condition){
+	statments;
+}elseif(condition){
+	statments;
+}else{
+	Statments;
+};*/
 	$i=20;
 	//$i = 17; (for elseif)
 	//$i = 14; (for else)

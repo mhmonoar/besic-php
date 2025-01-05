@@ -1,4 +1,15 @@
 <?php
+
+/*switch(Expression){
+	case condition 1: 
+		statments;
+	break;
+	case condition 2: 
+		statments;
+	break;
+	......
+	default: statments;
+}*/
 	$weekday = 7;
 	switch($weekday){
 		case 1:
