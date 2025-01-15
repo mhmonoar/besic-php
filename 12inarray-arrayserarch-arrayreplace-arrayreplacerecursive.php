@@ -70,6 +70,16 @@
 	/* 
 	*array_replace function not enabled to change in defults Array
 	* array replace function work with  multidimintaial associate array
+	*need to key name same both array then it's will replace other wise it's will print all key value
 	*/
+	
+	$arry1= array("a"=> array("Apple"), "b"=> array("Orange","Banana")); 
+	$arry2= array("a"=> array("Anaros"), "b"=>array("Malta"));
+	
+	$arryReplace = array_replace_recursive($arry1,$arry2);
+	
+	echo "<pre>";
+		print_r($arryReplace);
+	echo "</pre>";
 	
 ?>
