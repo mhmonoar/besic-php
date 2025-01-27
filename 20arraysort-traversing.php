@@ -126,4 +126,58 @@ echo "<br>";
 echo "<br>";
 /////////////////////////////////////////////////////////////////end sort function//////////////////////////////////////////////////////////////////////////
 
+
+
+
+/////////////////Arrray Traversing function/////////////////
+echo "<h2>Titl=>Traversing Function start</h2>";
+/*
+	This function use for take different moment from array value 
+	in arrray by defolt internal value 0
+	
+	next() --move next value
+	prev() --bake previous value
+	end()  -- move end point
+	current() -- carrent position
+	key()  -- carrent position index value key will return 
+	pos()  --- Like carrent function
+	each(() --- It's wil return exeact value and key
+	reset()---
+*/
+
+$veggitable = ["Tomato", "Potato", "Pumking", "Borboti", "Carrot"];
+///////////current///////////
+echo "<b>Current Position: </b>". current($veggitable) . "<br>"; //Return will carrent position
+////////////Key/////////////
+echo "<b>Key: </b>". key($veggitable) . "<br>"; //Return current position key
+///////////position or pos///////////
+echo "<b>Current Position: </b>". pos($veggitable) . "<br>"; //Return will carrent position
+echo "<br><br>";
+
+////////////////next//////////
+next($veggitable);
+echo "<b>Current Position: </b>". current($veggitable) . "<br>"; //after using next function
+next($veggitable);
+echo "<b>Current Position: </b>". current($veggitable) . "<br>"; //after using next function
+echo "<br><br>";
+/////////////previous or prev////
+prev($veggitable);
+echo "<b>Using Prev: </b>". current($veggitable) . "<br>"; //after using doble next then use prev function
+echo "<br><br>";
+/////////////end/////////////////
+end($veggitable);
+echo "<b>Using End: </b>". current($veggitable) . "<br>"; //return end Using end function
+echo "<br><br>";
+///////////using each function/////////////////
+echo "<h2 style='color:red;'> Each() function This code is not work Need to check this again </h2>";
+/*
+$neach= each($veggitable);
+echo "<pre>";
+	print_r($neach);
+echo "</pre>";
+echo "<br><br>";
+*/
+/////////////reset//////////
+reset($veggitable);
+echo "<b>Using End: </b>". current($veggitable) . "<br>"; //if array position anywhere it's will come first value
 ?>
