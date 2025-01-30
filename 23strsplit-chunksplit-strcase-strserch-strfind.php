@@ -1,5 +1,20 @@
 <?php
-	echo "<h2>String Splig Function short form str_split(string,length)</h2>";
+	echo "<h2>String Length and String Word Count Functions</h2>";
+	
+	/////////
+	echo "<h4>strlen(string)</h4>";
+	$i = "Hello world is Beautiful is";
+	echo strlen($i);
+	///////
+	echo "<h4>str_word_count(string,return)</h4>";
+	echo str_word_count($i);
+	//////////
+	echo "<h4>sub_str_count(string, substring,start,length)</h4>";
+	echo substr_count($i,"is");// how many time substring have show it
+	
+	
+	
+	echo "<h2>String Split Function short form str_split(string,length)</h2>";
 	/*
 		*If need to string Every characters to different array index print then use thes function
 		*str_split(string,length) --length is optional its deifine how much characters take at a time
@@ -16,7 +31,7 @@
 	 echo "<br>";
 	 ////////
 	 
-	 echo "<h2>String Splig Function short form chunk_split(string,length,end)</h2>";
+	 echo "<h2>String Split Function short form chunk_split(string,length,end)</h2>";
 	 //////////////////////chunk_split///////////////////////
 	 /*
 		After every string character if need add anything then use chunk_split
@@ -54,7 +69,7 @@
 	 //////
 	  ///////////////////////////////////////////////////
 	  
-		echo "<h2>String Search and Find position</h2>";
+		echo "<h2>String Search and Find position Those string Function Return will String Position</h2>";
 		
 		echo "<p>strpos(string,find,start) -- search from start its case sensetive</p>";
 		echo "<p>strrpos(string,find,start) -- search from end its case sensetive</p>";
