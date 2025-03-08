@@ -77,7 +77,7 @@
 	echo "<h2>Date_create & Date_format Function</h2>";
 	echo "<h4>Date_create(time,timezone)</h4>";
 	echo "<h4>Date_format(object,format)</h4>";
-	$dates = date_create("2050-04-21", timezone_open("Asia/Dhaka"));
+	$dates = date_create("1998-09-14", timezone_open("Asia/Dhaka"));
 	echo date_format($dates,"l") ."<br>";
 	
 	////////////////////////////////////////end//////////////////////////////////////////////////////////
